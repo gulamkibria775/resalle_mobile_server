@@ -657,7 +657,7 @@ async function run() {
     
     
    
-    //  * app.patch('/bookings/:id')
+    
     //  * app.delete('/bookings/:id')
     //  */
 
