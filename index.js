@@ -653,7 +653,7 @@ async function run() {
     // });
 
     // /***
-    //  * API Naming Convention
+    
     //  * app.get('/bookings')
     //  * app.get('/bookings/:id')
     //  * app.post('/bookings')
