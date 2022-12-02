@@ -507,8 +507,7 @@ async function run() {
 
     
 
-    //   app.post('/category', async (req, res) =>{
-    //     const payment = data
+    /
     //     // const result = await paymentsCollection.insertOne(payment);
     //     const id = payment.id
     //     const filter = {_id: ObjectId(id)}
