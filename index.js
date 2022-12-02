@@ -658,7 +658,7 @@ async function run() {
     
    
     
-    //  * app.delete('/bookings/:id')
+   
     //  */
 
     // app.get("/bookings", verifyJWT, async (req, res) => {
