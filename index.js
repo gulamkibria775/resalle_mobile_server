@@ -507,8 +507,7 @@ async function run() {
 
     
 
-    /
-    //     // const result = await paymentsCollection.insertOne(payment);
+    
     //     const id = payment.id
     //     const filter = {_id: ObjectId(id)}
     //     const updatedDoc = {
