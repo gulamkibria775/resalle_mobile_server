@@ -654,7 +654,7 @@ async function run() {
 
     // /***
     
-    //  * app.get('/bookings')
+    
     //  * app.get('/bookings/:id')
     //  * app.post('/bookings')
     //  * app.patch('/bookings/:id')
