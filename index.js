@@ -508,9 +508,7 @@ async function run() {
     
 
     
-    //     const id = payment.id
-    //     const filter = {_id: ObjectId(id)}
-    //     const updatedDoc = {
+    
     //         $set: {
     //             paid: true,
     //             transactionId: payment.transactionId
