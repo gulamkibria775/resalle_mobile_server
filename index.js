@@ -20,20 +20,6 @@ console.log(process.env.DB_USER,process.env.DB_PASS)
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.gi9sxo8.mongodb.net/?retryWrites=true&w=majority`;
 
 
-// const { MongoClient, ServerApiVersion } = require('mongodb');
-// const uri = "mongodb+srv://<username>:<password>@cluster0.gi9sxo8.mongodb.net/?retryWrites=true&w=majority";
-// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
-// client.connect(err => {
-//   const collection = client.db("test").collection("devices");
-//   // perform actions on the collection object
-//   client.close();
-// });
-
-// mongodb+srv://<username>:<password>@cluster0.gi9sxo8.mongodb.net/?retryWrites=true&w=majority
-// const uri = "mongodb://0.0.0.0:27017/";
-
-// const key =
-//   "2738e1226ee7e159a25a8e856da21a51b5a1a9caa0e2e0798b29e1ed55adf5720ff0662d20355d2bdd055a29e131115ca9ffad2a7461e1902f01708f83da2b9b";
 const key =process.env.ACCESS_TOKEN;
 
 // jwt
@@ -136,20 +122,7 @@ async function run() {
     });
 
 
-    // app.get("/user", async (req, res) => {
-    //   const result = await productCollection.distinct("email");
-    //   const filter = { email: result[0] };
-    //   // const din = await sellerCollection.insertMany(filter);
-
-    //   console.log("user_result", result, din);
-    //   res.send(result);
-    // });
-
-    // data=[{categoryone:'oneplus'},
-    // {categorytwo:'walton'},
-    // {categorythree:'samsung'},
-    // ]
-    //  const result =  categoryCollection.insertMany(data);
+ 
 
 
     app.get("/category", async (req, res) => {
@@ -314,18 +287,14 @@ async function run() {
 
     app.post("/addproductbyseller", async (req, res) => {
       const user = req.body;
-      // console.log(user);
-      // TODO: make sure you do not enter duplicate user email
-      // only insert users if the user doesn't exist in the database
+      
       const result = await productCollection.insertOne(user);
       res.send(result);
     });
 
     app.post("/buyers", async (req, res) => {
       const user = req.body;
-      // console.log(user);
-      // TODO: make sure you do not enter duplicate user email
-      // only insert users if the user doesn't exist in the database
+     
       const result = await buyerCollection.insertOne(user);
       res.send(result);
     });
